@@ -1,0 +1,15 @@
+.info_gs {
+  display: grid;
+  background: #fdfdfd;
+  border-radius: 10px;
+  font-size: 20px;
+  grid-column: 3/4;
+  grid-row: 2/4;
+  align-self: end;
+  height: 630px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 60px 105px 350px 1fr 1fr;
+  margin-bottom: 20px;
+}
+
+/*# sourceMappingURL=InfoGS.module.css.map */

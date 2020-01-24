@@ -1,0 +1,45 @@
+.gridmypage
+  display: grid
+  position: relative
+
+  grid-gap: 20px
+  grid-template-columns: 1px 300px minmax(500px, 800px)
+  grid-auto-rows: minmax(320px, auto)
+  grid-template-areas: '. photo person' '. frind fladd' '. frindon .'
+
+.wrapper
+  margin: 20px auto 0 222px
+  max-width: 1366px
+  width: 100%
+
+
+.post_wrapper
+  display: grid
+  margin-top: -390px
+  grid-template-columns: 565px 1fr
+
+
+
+.photo
+  grid-area: photo
+.person
+  grid-area: person
+
+.frind
+  grid-area: frind
+  position: absolute
+  width: 100%
+  margin-top: -25px
+
+
+.frindon
+  grid-area: frindon
+  position: absolute
+  width: 100%
+  margin-top: -40px
+
+.emp
+  grid-area: emp
+
+.fileadd_mypage
+  grid-area: fladd

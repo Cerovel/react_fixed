@@ -1,0 +1,14 @@
+.self_center {
+  height: 116px;
+  display: grid;
+}
+
+.self_center {
+  font-size: 18px;
+}
+
+.self_center div {
+  align-self: center;
+}
+
+/*# sourceMappingURL=QuatityFriends.module.css.map */

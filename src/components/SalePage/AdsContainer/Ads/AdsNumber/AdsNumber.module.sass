@@ -1,0 +1,34 @@
+.card
+  width: 380px
+  height: 85px
+  position: relative
+  perspective: 1000px
+  color: #FFffff
+  font-size: 24px
+  line-height: 28px
+  letter-spacing: -0.06em
+
+.front, .back
+  position: absolute
+  width: 100%
+  height: 100%
+  left: 0
+  top: 0
+  display: flex
+  justify-content: center
+  align-items: center
+  transition: 1s
+  backface-visibility: hidden
+  border-radius: 10px
+
+.front
+  background-color: #04C3FF
+
+.back
+  background-color: green
+  transform: rotateY(180deg)
+
+.card:hover .front
+  transform: rotateY(180deg)
+.card:hover .back
+  transform: rotateY(360deg)

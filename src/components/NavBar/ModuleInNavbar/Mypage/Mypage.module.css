@@ -1,0 +1,16 @@
+.mypage:hover {
+  color: white;
+  background: linear-gradient(141.34deg, #FCE38A 0%, #F38181 100%);
+}
+
+.mypage {
+  background: #fdfdfd;
+  color: #000;
+}
+
+.activelink {
+  background: linear-gradient(141.34deg, #FCE38A 0%, #F38181 100%);
+  color: #fff;
+}
+
+/*# sourceMappingURL=Mypage.module.css.map */

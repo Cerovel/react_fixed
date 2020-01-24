@@ -1,0 +1,35 @@
+.grid_container {
+  height: 100%;
+  margin: 0;
+}
+
+.grid_container {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 222px 1fr 1fr 1fr;
+  grid-template-rows: 100px 100px 100px 100px 100px 100px 100px;
+  grid-template-areas: "navbar search_friend search_friend add_location" "navbar friends friends friends" "navbar friends friends friends" "navbar friends friends friends" "navbar friends friends friends" "navbar friends friends friends" "navbar . show_More .";
+}
+
+.navbar_conversation {
+  grid-area: navbar;
+  z-index: -1;
+}
+
+.friend_box {
+  grid-area: friends;
+}
+
+.search_friend {
+  grid-area: search_friend;
+}
+
+.add_location {
+  grid-area: add_location;
+}
+
+.show_More {
+  grid-area: show_More;
+}
+
+/*# sourceMappingURL=Conversation.module.css.map */

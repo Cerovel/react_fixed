@@ -1,0 +1,15 @@
+.mysettings {
+  background: #fff;
+}
+
+.mysettings:hover {
+  background: linear-gradient(141.34deg, #F030C1 0%, #6094EA 100%);
+  color: #fdfdfd;
+}
+
+.activelink {
+  background: linear-gradient(141.34deg, #F030C1 0%, #6094EA 100%);
+  color: #fff;
+}
+
+/*# sourceMappingURL=Mysettings.module.css.map */

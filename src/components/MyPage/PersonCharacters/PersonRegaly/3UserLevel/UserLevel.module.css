@@ -1,0 +1,19 @@
+.self_center {
+  height: 116px;
+  display: grid;
+}
+
+.self_center {
+  font-size: 20px;
+}
+
+.medal_color div strong:nth-child(1) {
+  color: gold;
+  font-size: 30px;
+}
+
+.self_center div {
+  align-self: center;
+}
+
+/*# sourceMappingURL=UserLevel.module.css.map */

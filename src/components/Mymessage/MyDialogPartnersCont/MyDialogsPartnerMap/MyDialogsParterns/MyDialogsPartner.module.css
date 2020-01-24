@@ -1,0 +1,42 @@
+.dialogs_grid {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 70px 1fr 100px;
+  grid-template-rows: 100px;
+  grid-template-areas: "photo name time";
+  border-radius: 10px;
+  background: #Fdfdfd;
+  margin-top: 20px;
+}
+
+.dialogs_grid:hover {
+  background: rgba(0, 67, 253, 0.32);
+}
+
+.user_photo {
+  grid-area: photo;
+  align-self: center;
+  justify-self: center;
+}
+.user_photo img {
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  padding-left: 20px;
+}
+
+.user_name {
+  grid-area: name;
+  align-self: center;
+  padding-left: 20px;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  cursor: pointer;
+}
+
+.message_add_time {
+  grid-area: time;
+  align-self: center;
+}
+
+/*# sourceMappingURL=MyDialogsPartner.module.css.map */

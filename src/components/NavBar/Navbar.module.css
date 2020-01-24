@@ -1,0 +1,32 @@
+.sidebar {
+  z-index: 999;
+  grid-row: 1/4;
+  font-size: 20px;
+  display: grid;
+  width: 222px;
+}
+
+.side_grid {
+  display: grid;
+  grid-template-rows: 100px 100px 100px 100px 100px 100px 100px 100px;
+}
+
+.side_grid a {
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+  font-size: 18px;
+  transition: 300ms;
+  text-decoration: none;
+}
+
+.side_grid div {
+  grid-column: 1/3;
+}
+
+.side_grid span {
+  margin: 20px;
+  font-size: 35px;
+}
+
+/*# sourceMappingURL=Navbar.module.css.map */

@@ -1,0 +1,22 @@
+.user_set {
+  background: #fdfdfd;
+  height: 100%;
+  grid-template-rows: 50px 50px 50px 50px 50px;
+  border-radius: 10px;
+  display: grid;
+  padding-top: 40px;
+}
+
+.user_set div {
+  align-self: center;
+  padding: 10px 10px 10px 20px;
+  transition: 300ms;
+  cursor: pointer;
+}
+
+.user_set div:hover {
+  background: rgba(65, 105, 225, 0.41);
+  transition: 300ms;
+}
+
+/*# sourceMappingURL=UserSetiings.module.css.map */

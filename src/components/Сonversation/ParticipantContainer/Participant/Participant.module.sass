@@ -1,0 +1,61 @@
+.participant_grid
+  display: grid
+  grid-template-columns: 550px 550px
+  grid-gap: 20px
+
+.participant
+  width: 550px
+  height: 100px
+  background: #fff
+  display: grid
+  grid-template-columns: 100px 220px 1fr
+
+.name
+  align-self: center
+  font-size: 18px
+
+.name_ava
+  height: 70%
+  align-self: center
+  justify-self: center
+
+.follow_style
+  border: none
+  font-weight: 700
+  font-size: 18px
+  letter-spacing: -0.06em
+  color: white
+  text-decoration: none
+  padding: 8px
+  border-radius: 3px
+  background: rgba(22, 201, 41, 0.59)
+
+  transition: 0.2s
+
+  &:hover
+    background: rgba(0, 201, 45, 0.91)
+    cursor: pointer
+
+  &:active
+    background: rgba(0, 42, 147, 0.6)
+
+
+.unfollow_style
+  border: none
+  font-weight: 700
+  font-size: 18px
+  letter-spacing: -0.06em
+  color: white
+  text-decoration: none
+  padding: 8px
+  border-radius: 3px
+  background: rgba(201, 15, 18, 0.59)
+
+  transition: 0.2s
+
+  &:hover
+    background: rgba(201, 0, 70, 0.91)
+    cursor: pointer
+
+  &:active
+    background: rgba(0, 42, 147, 0.6)

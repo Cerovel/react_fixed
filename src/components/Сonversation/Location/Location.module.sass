@@ -1,0 +1,45 @@
+.location_grid
+  display: grid
+  grid-template-columns: 300px 60px
+  grid-template-rows: 50px 50px
+  grid-template-areas: 'district button' 'vilage button'
+
+.district
+  border: red
+  height: 48px
+  grid-area: district
+  font-size: 20px
+  text-indent: 20px
+.district::placeholder
+  color: rgba(0, 0, 0, 0.31)
+
+.vilage
+  height: 48px
+  border: none
+  border-top: 1px solid rgba(0, 0, 0, 0.21)
+  grid-area: vilage
+  font-size: 20px
+  text-indent: 20px
+
+.vilage::placeholder
+  color: rgba(0, 0, 0, 0.31)
+
+.search_friend
+  grid-area: button
+  border: none
+  font-weight: 700
+  font-size: 18px
+  letter-spacing: -0.06em
+  color: white
+  text-decoration: none
+  padding: 8px
+  border-radius: 3px
+  background: rgba(22, 201, 41, 0.74)
+
+  transition: 0.2s
+
+  &:hover
+    background: rgba(0, 201, 45, 0.91)
+
+  &:active
+    background: rgba(0, 42, 147, 0.6)

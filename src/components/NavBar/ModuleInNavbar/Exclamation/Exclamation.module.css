@@ -1,0 +1,16 @@
+.exclamation:hover {
+  background: linear-gradient(141.34deg, #622774 0%, #C53364 100%);
+  color: #fff;
+}
+
+.exclamation {
+  color: #000;
+  background: #fdfdfd;
+}
+
+.activelink {
+  background: linear-gradient(141.34deg, #622774 0%, #C53364 100%);
+  color: #fff;
+}
+
+/*# sourceMappingURL=Exclamation.module.css.map */

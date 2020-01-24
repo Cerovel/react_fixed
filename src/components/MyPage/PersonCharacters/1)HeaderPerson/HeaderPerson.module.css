@@ -1,0 +1,26 @@
+.head_person_char {
+  margin: 20px 20px 0 20px;
+  padding-bottom: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-bottom: 1px solid #E6E6E6;
+}
+
+.head_person_char div:nth-child(1) {
+  font-size: 24px;
+  font-weight: 500;
+  grid-column: 1;
+  line-height: 26px;
+}
+
+.head_person_char div a {
+  font-size: 20px;
+  color: #797979;
+}
+
+.head_person_char div:nth-child(2) {
+  text-align: right;
+  color: #07AA5C;
+}
+
+/*# sourceMappingURL=HeaderPerson.module.css.map */

@@ -1,0 +1,16 @@
+.footerPersonChar {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.footerPersonChar {
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.footerPersonChar div:nth-child(3) {
+  background: #00D1FF;
+  color: #ffffff;
+}
+
+/*# sourceMappingURL=PersonFooterPackRegaly.module.css.map */

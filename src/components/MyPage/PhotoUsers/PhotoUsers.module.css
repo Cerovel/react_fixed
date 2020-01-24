@@ -1,0 +1,9 @@
+.PhotoProfile {
+  background: #FEFEFE;
+  height: 366px;
+  display: grid;
+  justify-items: center;
+  border-radius: 10px;
+}
+
+/*# sourceMappingURL=PhotoUsers.module.css.map */

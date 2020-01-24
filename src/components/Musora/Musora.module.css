@@ -1,0 +1,16 @@
+.musora {
+  display: grid;
+  grid-template-columns: 222px 20px 1000px;
+  grid-template-areas: ". . fileadd" ". .user_answer";
+  margin-top: 20px;
+}
+
+.fileadd {
+  grid-area: fileadd;
+}
+
+.user_answer {
+  grid-area: user_answer;
+}
+
+/*# sourceMappingURL=Musora.module.css.map */

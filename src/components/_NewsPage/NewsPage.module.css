@@ -1,0 +1,34 @@
+.newareagrid{
+    margin: 20px;
+    display: grid;
+    grid-gap: 20px  ;
+    grid-template-columns: 222px 700px 398px;
+    grid-template-rows: 250px  130px 485px;
+    grid-template-areas:
+
+    "navbar addfile userset"
+    ". news userset"
+    ". news ."
+
+
+}
+
+.navbar {
+    grid-area: navbar;
+
+}
+.addfile {
+    grid-area: addfile;
+    border-radius: 10px;
+
+}
+.user_settings {
+    grid-area: userset;
+
+    border-radius: 10px;
+}
+.news {
+    grid-area: news;
+
+    border-radius: 10px;
+}

@@ -1,0 +1,82 @@
+
+.file_add__wrap
+  background: #fdfdfd
+  height: 532px
+  border-radius: 10px
+  transition: 500ms
+
+.file_add__wrap:hover
+  box-shadow: 5px 5px 40px rgba(0, 74, 255, 0.3)
+  transition: 500ms
+
+
+.file_add
+  display: grid
+  font-size: 24px
+  padding: 72px
+  grid-template-columns: 1fr 1fr
+  grid-template-areas: 'item_1 item_1' 'item_2 item_3' 'item_4 item_5'
+
+.file_add div
+  height: 120px
+
+.file_add strong
+  align-self: end
+
+
+.item_1
+  grid-area: item_1
+  display: grid
+
+.all_input
+  resize: none
+  outline: none
+  font-size: 24px
+  width: 90%
+  font-family: sans-serif
+  background: transparent
+  border: 0
+  border-bottom: 2px solid rgba(000,000,000,.3)
+
+
+.item_2
+  grid-area: item_2
+  display: grid
+
+
+.item_3
+  grid-area: item_3
+  display: grid
+
+.item_4
+  grid-area: item_4
+  display: grid
+
+.item_5
+  grid-area: item_5
+  display: grid
+
+
+
+
+
+.publick_where
+  border: none
+  height: 40px
+  align-self: end
+  font-weight: 700
+  font-size: 18px
+  letter-spacing: -0.06em
+  color: white
+  text-decoration: none
+  padding: 8px
+  border-radius: 3px
+  background: rgba(3, 92, 201, 0.74)
+
+  transition: 0.2s
+
+  &:hover
+    background: rgba(5, 52, 201, 0.82)
+
+  &:active
+    background: rgba(0, 42, 147, 0.6)

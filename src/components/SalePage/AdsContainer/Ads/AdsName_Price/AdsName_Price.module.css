@@ -1,0 +1,19 @@
+.adsname {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-size: 36px;
+}
+
+.name {
+  justify-self: start;
+}
+
+.price {
+  justify-self: end;
+}
+
+.price span {
+  color: rgba(3, 92, 201, 0.5);
+}
+
+/*# sourceMappingURL=AdsName_Price.module.css.map */

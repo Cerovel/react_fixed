@@ -1,0 +1,34 @@
+.ads_grid {
+  background: #fdfdfd;
+  border-radius: 5px;
+  padding: 20px 0 20px 20px;
+  display: grid;
+  grid-gap: 20px;
+  height: 654px;
+  grid-template-columns: 620px 380px;
+  grid-template-rows: 70px 85px 85px 200px;
+  grid-template-areas: "name name" "slider number" "slider mess" "slider desc";
+  margin-bottom: 20px;
+}
+
+.name {
+  grid-area: name;
+}
+
+.slider {
+  grid-area: slider;
+}
+
+.number {
+  grid-area: number;
+}
+
+.mess {
+  grid-area: mess;
+}
+
+.desc {
+  grid-area: desc;
+}
+
+/*# sourceMappingURL=Ads.module.css.map */

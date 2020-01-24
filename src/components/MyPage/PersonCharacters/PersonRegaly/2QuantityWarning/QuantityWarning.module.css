@@ -1,0 +1,20 @@
+.self_center {
+  height: 116px;
+  display: grid;
+  background: #15EB6A;
+  color: #ffffff;
+}
+
+.self_center strong {
+  font-size: 28px;
+}
+
+.self_center {
+  font-size: 18px;
+}
+
+.self_center div {
+  align-self: center;
+}
+
+/*# sourceMappingURL=QuantityWarning.module.css.map */

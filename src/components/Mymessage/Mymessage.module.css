@@ -1,0 +1,17 @@
+.message_grid {
+  display: grid;
+  margin-top: 20px;
+  grid-template-columns: 222px 600px 300px;
+  grid-gap: 20px;
+  grid-template-areas: ". dialog my_friend" ". . absolute_button";
+}
+
+.dialog {
+  grid-area: dialog;
+}
+
+.myfriends {
+  grid-area: my_friend;
+}
+
+/*# sourceMappingURL=Mymessage.module.css.map */

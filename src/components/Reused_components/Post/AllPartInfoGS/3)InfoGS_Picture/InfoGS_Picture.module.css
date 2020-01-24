@@ -1,0 +1,14 @@
+.picture_gai {
+  grid-column: 1/5;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.picture_gai img {
+  width: 100%;
+  height: 100%;
+  object-position: center;
+  object-fit: cover;
+}
+
+/*# sourceMappingURL=InfoGS_Picture.module.css.map */

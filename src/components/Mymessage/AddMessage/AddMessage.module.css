@@ -1,0 +1,29 @@
+.absolute_button {
+  height: 40px;
+  grid-area: absolute_button;
+}
+
+.buttonscj {
+  height: 100%;
+  border: none;
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: -0.06em;
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  background: rgba(3, 92, 201, 0.74);
+  transition: 0.2s;
+}
+.buttonscj:hover {
+  background: rgba(5, 52, 201, 0.82);
+}
+.buttonscj:active {
+  background: rgba(0, 42, 147, 0.6);
+}
+
+.add_message {
+  height: 100%;
+}
+
+/*# sourceMappingURL=AddMessage.module.css.map */
