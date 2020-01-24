@@ -1,0 +1,3 @@
+let newTestFunction = () => {
+    return 'sosi'
+}

@@ -18,7 +18,7 @@ const Ads = (props) => {
                 </div>
                 <div className={s.slider}>
                     <AdsSlider photo={props.photo}/>
-
+                    <div>sosi pisos i bud zdorov</div>
                 </div>
                 <div className={s.number}>
                     <AdsNumber phone_numb={props.phone_numb}/>
