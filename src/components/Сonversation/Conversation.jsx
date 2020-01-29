@@ -4,6 +4,7 @@ import SearchComp from "./SearchComp/SearchComp";
 import Location from "./Location/Location";
 import ShowMore from "./ShowMore/ShowMore";
 import ParticipantContainer from "./ParticipantContainer/ParticipantContainer";
+import PaginationContainer from "./PaginationContainer/PaginationContainer";
 
 
 const Conversation = () => {
@@ -17,6 +18,9 @@ const Conversation = () => {
             </div>
             <div className={s.add_location}>
                 <Location/>
+            </div>
+            <div className={s.pagination}>
+                <PaginationContainer/>
             </div>
             <div className={s.friend_box}>
                 <ParticipantContainer/>

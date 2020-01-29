@@ -13,7 +13,7 @@ let reducers = combineReducers({
     Sale_page       :     salePageReducer,
     MyMessagePage   :     myMessagePageReducer,
     Musora_page     :     musoraPageReducer,
-    UsersPage       :     ConversationReducer,
+    ConversationPage:     ConversationReducer,
 });
 
 

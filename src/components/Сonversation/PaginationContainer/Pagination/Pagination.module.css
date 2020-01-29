@@ -1,0 +1,14 @@
+.pagination_part {
+  text-align: end;
+  cursor: pointer;
+  font-size: 30px;
+}
+
+.selected_pagination {
+  color: #00bce1;
+  font-weight: bold;
+  border-bottom: 1px solid;
+  padding: 0 5px;
+}
+
+/*# sourceMappingURL=Pagination.module.css.map */

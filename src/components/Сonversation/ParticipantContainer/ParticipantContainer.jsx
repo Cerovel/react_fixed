@@ -1,12 +1,15 @@
 import React from "react";
 import {connect} from "react-redux";
- import {followAC, setUserAC, unFollowAC} from "../../../redux/ConversationReducer";
+import {followAC, setUserAC, unFollowAC} from "../../../redux/ConversationReducer";
 import Participant from "./Participant/Participant";
 
 let mapStateToProps = (state) => {
- return {
-    users: state.UsersPage.users
- }
+    return {
+        users: state.ConversationPage.users,
+
+
+
+    }
 };
 
 let mapDispatchToProps = (dispatch) => {
@@ -14,7 +17,7 @@ let mapDispatchToProps = (dispatch) => {
         follow: (userID) => {
             dispatch(followAC(userID));
         },
-        unfollow: (userID) =>  {
+        unfollow: (userID) => {
             dispatch(unFollowAC(userID))
         },
         setUsers: (users) => {
@@ -25,8 +28,6 @@ let mapDispatchToProps = (dispatch) => {
 };
 
 
+const ParticipantContainer = connect(mapStateToProps, mapDispatchToProps)(Participant);
 
-
-const ParticipantContainer = connect(mapStateToProps,mapDispatchToProps)(Participant);
-
-export  default  ParticipantContainer;
+export default ParticipantContainer;

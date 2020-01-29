@@ -1,10 +1,13 @@
 const FOLLOW = 'FOLLOW';
 const UNFOLLOW = 'UNFOLLOW';
 const SET_USER = 'SET-USER';
+const SET_CURRENT_PAGE = 'SET-CURRENT-PAGE';
 
 const initialState = {
     users: [],
-    newPostText: 'MyPage'
+    pageSize: 10,
+    totalUsersCount: 100,
+    currentPage: 4
 };
 
 const ConversationReducer = (state = initialState, action) => {
@@ -22,7 +25,6 @@ switch (action.type) {
             })
         };
 
-
     case UNFOLLOW:
          return  {
             ...state,
@@ -35,8 +37,13 @@ switch (action.type) {
         };
 
     case SET_USER: {
-        return {...state, users: [...state.users, ...action.users]}
+        return {...state, users: [...action.users]}
     }
+
+    case SET_CURRENT_PAGE: {
+        return {...state, currentPage: action.current_page}
+    }
+
 
 
 
@@ -55,6 +62,10 @@ export const unFollowAC = (userID) => {
 export const setUserAC = (users) => {
     return {type: SET_USER, users}
 };
+
+export const setCurrentPageAC = (current_page)=> {
+    return{ type: SET_CURRENT_PAGE, current_page }
+}
 
 export default ConversationReducer;
 
