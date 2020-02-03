@@ -15,7 +15,10 @@ const UserAnswerMap = (props) => {
                             where_they={l.where_they}
                             car_model={l.car_model}
                             comment_musor={l.comment_musor}
-                            photo_musor_page={l.photo_musor_page}/>
+                            photo_musor_page={l.photo_musor_page}
+                            key={l.id}
+
+             />
          )
     });
 

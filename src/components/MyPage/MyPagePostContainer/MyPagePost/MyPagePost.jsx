@@ -7,7 +7,7 @@ const MyPagePost = (props) => {
 
     let MyPagePost = props.page_post.map((k) => {
         return (
-            <Post head={k.head} user={k.user} time={k.time} ava={k.ava} picture={k.picture} desc={k.desc} like={k.like}
+            <Post key={k.id} head={k.head} user={k.user} time={k.time} ava={k.ava} picture={k.picture} desc={k.desc} like={k.like}
                   comment={k.comment}/>
         )
     });
