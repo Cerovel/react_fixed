@@ -1,7 +1,7 @@
 import React from "react";
 import {connect} from "react-redux";
-import Pagination from "./Pagination/Pagination";
-import {setCurrentPageAC, setUserAC,} from "../../../redux/ConversationReducer";
+ import {setCurrentPageAC, setUserAC,} from "../../../redux/ConversationReducer";
+import PaginationAPIComponent from "./PaginationAPIComponent/PaginationAPIComponent";
 
 
 let mapStateToProps = (state) => {
@@ -24,7 +24,7 @@ let mapDispatchToProps = (dispatch) => {
     }
 };
 
-const PaginationContainer = connect(mapStateToProps,mapDispatchToProps)(Pagination);
+const PaginationContainer = connect(mapStateToProps,mapDispatchToProps)(PaginationAPIComponent);
 
 
 
