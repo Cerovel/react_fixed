@@ -21,6 +21,17 @@
   font-size: 18px;
 }
 
+.avatarka {
+  display: grid;
+  transition: 200ms;
+}
+
+.avatarka:hover {
+  transform: scale(1.1, 1.1);
+  border-left: 1px solid rgba(0, 0, 139, 0.26);
+  transition: 200ms;
+}
+
 .name_ava {
   height: 70%;
   align-self: center;

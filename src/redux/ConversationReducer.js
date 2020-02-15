@@ -2,54 +2,57 @@ const FOLLOW = 'FOLLOW';
 const UNFOLLOW = 'UNFOLLOW';
 const SET_USER = 'SET-USER';
 const SET_CURRENT_PAGE = 'SET-CURRENT-PAGE';
+const TOGGLE_IS_FETCHING = 'TOGGLE_IS_FETCHING';
 
 const initialState = {
     users: [],
     pageSize: 10,
     totalUsersCount: 100,
-    currentPage: 4
+    currentPage: 4,
+    isFetching: true,
 };
 
 const ConversationReducer = (state = initialState, action) => {
 
 
-switch (action.type) {
-    case FOLLOW:
-        return  {
-            ...state,
-            users: state.users.map((u)=> {
-                if (u.id === action.userID) {
-                    return {...u, followed: true}
-                }
-                return u
-            })
-        };
+    switch (action.type) {
+        case FOLLOW:
+            return {
+                ...state,
+                users: state.users.map((u) => {
+                    if (u.id === action.userID) {
+                        return {...u, followed: true}
+                    }
+                    return u
+                })
+            };
 
-    case UNFOLLOW:
-         return  {
-            ...state,
-            users: state.users.map((u)=> {
-                if (u.id === action.userID) {
-                    return {...u, followed: false}
-                }
-                return u
-            })
-        };
+        case UNFOLLOW:
+            return {
+                ...state,
+                users: state.users.map((u) => {
+                    if (u.id === action.userID) {
+                        return {...u, followed: false}
+                    }
+                    return u
+                })
+            };
 
-    case SET_USER: {
-        return {...state, users: [...action.users]}
+        case SET_USER: {
+            return {...state, users: [...action.users]}
+        }
+        case TOGGLE_IS_FETCHING: {
+            return {...state, isFetching: action.isFetching}
+        }
+
+        case SET_CURRENT_PAGE: {
+            return {...state, currentPage: action.current_page}
+        }
+
+
+        default:
+            return state
     }
-
-    case SET_CURRENT_PAGE: {
-        return {...state, currentPage: action.current_page}
-    }
-
-
-
-
-    default:
-        return state
-}
 
 };
 
@@ -63,9 +66,13 @@ export const setUserAC = (users) => {
     return {type: SET_USER, users}
 };
 
-export const setCurrentPageAC = (current_page)=> {
-    return{ type: SET_CURRENT_PAGE, current_page }
-}
+export const setCurrentPageAC = (current_page) => {
+    return {type: SET_CURRENT_PAGE, current_page}
+};
+
+export const toggleIsFetchingAC = (isFetching) => {
+    return {type: TOGGLE_IS_FETCHING, isFetching: isFetching}
+};
 
 export default ConversationReducer;
 

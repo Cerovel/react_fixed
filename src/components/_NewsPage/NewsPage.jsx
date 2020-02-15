@@ -8,12 +8,10 @@ import NewsPagePostContainer from "./NewsPagePostContainer/NewsPagePostContainer
 
 const NewsPage = (props) => {
 
-
-
     return (
         <div className='wrapper'>
             <div className={s.newareagrid}>
-                <div className={s.addfile}> <NPAddfileContainer store={props.store}/> </div>
+                <div className={s.addfile}> <NPAddfileContainer /> </div>
                 <div className={s.user_settings}><UserSettings/></div>
                 <div className={s.news}><NewsPagePostContainer /></div>
             </div>

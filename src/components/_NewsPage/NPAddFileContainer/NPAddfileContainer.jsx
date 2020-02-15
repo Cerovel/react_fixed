@@ -10,17 +10,8 @@ let stateToProps = (state) => {
         newPostText: state.News_page.newPostTextNP
     }
 };
-let dispatchToProps = (dispatch) => {
-    return {
-        addPost: () => {
-          dispatch(addPostNewsPageActionCreate())
-        },
-        UpdatePost: (text) => {
-            dispatch(updatePostNPActionCreate(text))
-        }
-    }
-};
-    const NPAddfileContainer = connect(stateToProps, dispatchToProps)(Addfile);
+
+    const NPAddfileContainer = connect(stateToProps, {addPost: addPostNewsPageActionCreate, UpdatePost: updatePostNPActionCreate})(Addfile);
 
 
 

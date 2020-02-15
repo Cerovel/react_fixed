@@ -6,28 +6,13 @@ import Participant from "./Participant/Participant";
 let mapStateToProps = (state) => {
     return {
         users: state.ConversationPage.users,
-
-
-
-    }
-};
-
-let mapDispatchToProps = (dispatch) => {
-    return {
-        follow: (userID) => {
-            dispatch(followAC(userID));
-        },
-        unfollow: (userID) => {
-            dispatch(unFollowAC(userID))
-        },
-        setUsers: (users) => {
-            dispatch(setUserAC(users))
-        }
-
+        isFetching: state.ConversationPage.isFetching,
     }
 };
 
 
-const ParticipantContainer = connect(mapStateToProps, mapDispatchToProps)(Participant);
+
+                                                        //  ↓↓↓ это mapDispatchToProps ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓ //
+const ParticipantContainer = connect(mapStateToProps, {follow: followAC, unfollow: unFollowAC, setUsers: setUserAC,})(Participant);
 
 export default ParticipantContainer;

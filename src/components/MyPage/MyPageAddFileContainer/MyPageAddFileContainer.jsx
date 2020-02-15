@@ -9,19 +9,7 @@ let mapStateToProps = (state) => {
        newPostText: state.My_page.newPostText
     }
 };
-let mapDispatchToProps = (dispatch) => {
-    return {
-        addPost: () => {
-            dispatch(addPostActionCreator())
-        },
-        UpdatePost: (text) => {
 
-            dispatch(ChangePostActionCreator(text))
-        },
-
-    }
-};
-
-const MyPageAddFileContainer = connect(mapStateToProps, mapDispatchToProps)(Addfile);
+const MyPageAddFileContainer = connect(mapStateToProps, {addPost: addPostActionCreator, UpdatePost: ChangePostActionCreator })(Addfile);
 
 export default MyPageAddFileContainer;
