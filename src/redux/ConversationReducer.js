@@ -7,14 +7,12 @@ const TOGGLE_IS_FETCHING = 'TOGGLE_IS_FETCHING';
 const initialState = {
     users: [],
     pageSize: 10,
-    totalUsersCount: 100,
+    totalUsersCount: 200,
     currentPage: 4,
     isFetching: true,
 };
 
 const ConversationReducer = (state = initialState, action) => {
-
-
     switch (action.type) {
         case FOLLOW:
             return {

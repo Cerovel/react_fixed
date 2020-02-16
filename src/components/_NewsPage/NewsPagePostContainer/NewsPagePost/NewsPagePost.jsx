@@ -8,8 +8,7 @@ const NewsPagePost = (props) => {
 
 
     let NewsPost = props.news_page.map((n) => {
-        return (
-            < Post head={n.head_name}
+        return< Post head={n.head_name}
                    user={n.user_name}
                    time={n.user_time}
                    ava={n.user_ava}
@@ -19,7 +18,7 @@ const NewsPagePost = (props) => {
                    comments={n.comment}
                    key={n.id}
             />
-        )
+
     });
 
     return (

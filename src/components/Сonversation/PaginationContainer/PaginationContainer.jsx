@@ -14,6 +14,7 @@ let mapStateToProps = (state) => {
 };
 
 
+
 const PaginationContainer = connect(mapStateToProps,{setUsers: setUserAC, setCurrentPage: setCurrentPageAC, toggleIsFetching: toggleIsFetchingAC})(PaginationAPIComponent);
 
 

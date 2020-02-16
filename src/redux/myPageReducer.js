@@ -1,5 +1,6 @@
 const ADD_POST = 'ADD-POST';
 const CHANGES_POST = 'CHANGES-POST';
+const USERS_PAGE = 'USERS_PAGE';
 
 const initialState = {
     page_post: [
@@ -12,12 +13,11 @@ const initialState = {
             comment: '2'
         }
     ],
-    newPostText: 'MyPage'
+    newPostText: 'MyPage',
+    users_page: []
 };
 
 const myPageReducer = (state = initialState, action) => {
-
-
     switch (action.type) {
         case CHANGES_POST:
             return {
@@ -38,6 +38,12 @@ const myPageReducer = (state = initialState, action) => {
                 page_post: [...state.page_post, objMyPage],
                 newPostText: '',
             };
+        case USERS_PAGE:
+            return  {
+                ...state,
+                users_page: [action.user]
+            }
+
     }
 
     return state
@@ -48,6 +54,9 @@ export const addPostActionCreator = () => {
 };
 export const ChangePostActionCreator = (text) => {
     return {type: CHANGES_POST, change: text}
+};
+export const UserPageAC = (user) => {
+    return {type: USERS_PAGE, user: user }
 };
 
 export default myPageReducer;

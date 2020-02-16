@@ -5,11 +5,11 @@ import MainPerson from "./2)MainPerson/MainPerson";
 import PersonFooterPackRegaly from "./PersonRegaly/PersonFooterPackRegaly";
 
 
-const PersonCharacters = () => {
+const PersonCharacters = (props) => {
     return (
         <div className={PersonClass.person_Char}>
 
-            <HeaderPerson />
+            <HeaderPerson fullName={props.fullName} />
             <MainPerson/>
              <PersonFooterPackRegaly />
 

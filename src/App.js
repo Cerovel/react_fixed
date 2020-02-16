@@ -14,13 +14,14 @@ import {
 } from '@fortawesome/free-solid-svg-icons'
 
 import {BrowserRouter, Route} from "react-router-dom";
-import MyPageAllCOmp from "./components/MyPage/MyPageAllCOmp";
 import NewsPage from "./components/_NewsPage/NewsPage";
 import Navbar from "./components/NavBar/Navbar";
 import Musora from "./components/Musora/Musora";
 import SalePage from "./components/SalePage/SalePage";
 import Mymessage from "./components/Mymessage/Mymessage";
 import Conversation from "./components/Сonversation/Conversation";
+import MyPageAllCompAPI from "./components/MyPage/MyPage/MyPageAllCompAPI/MyPageAllCompAPI";
+import MyPageAllCompContainer from "./components/MyPage/MyPage/MyPageAllCompContainer";
 
 
 library.add(fab, faHome, faNewspaper, faEnvelope,
@@ -38,7 +39,7 @@ let App = ( ) => {
                     < Navbar/>
                 </div>
                 {/*Компоненты главной страницы*/}
-                <Route path='/mypage' render={() => <MyPageAllCOmp/>}/>
+                <Route path='/mypage/:userId?' render={() => <MyPageAllCompContainer />}/>
 
                 {/*Компоненты главной страницы*/}
 
